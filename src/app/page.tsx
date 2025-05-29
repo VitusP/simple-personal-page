@@ -61,7 +61,7 @@ export default function Home() {
           </a>
           {/* Resume */}
           <a
-            href="/resume/Vitus_Putra_Resume.pdf"
+            href="/simple-personal-page/resume/Vitus_Putra_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Resume"
