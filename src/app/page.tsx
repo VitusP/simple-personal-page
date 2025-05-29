@@ -1,12 +1,6 @@
 "use client";
 
-import { usePathname } from 'next/navigation';
-
 export default function Home() {
-  const pathname = usePathname();
-  const isLocal = pathname === '/';
-  const basePath = isLocal ? '' : '/simple-personal-page';
-
   return (
     <div className="flex flex-col min-h-screen items-center justify-center bg-background text-foreground font-sans">
       <main className="flex flex-col items-center gap-8">
@@ -69,7 +63,7 @@ export default function Home() {
           </a>
           {/* Resume */}
           <a
-            href={`${basePath}/resume/Vitus_Putra_Resume.pdf`}
+            href="https://vputra-latest-resume.s3.us-east-1.amazonaws.com/Vitus_Putra_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Resume"
